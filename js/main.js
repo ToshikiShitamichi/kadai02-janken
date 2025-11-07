@@ -7,9 +7,9 @@
 */
 
 //カードマスター
-var cards = ["g-1", "g-2", "g-3", "c-1", "c-2", "c-3", "p-1", "p-2", "p-3"]
+var cards = ["g-1", "g-2", "g-3", "g-4", "g-5", "c-1", "c-2", "c-3", "c-4", "c-5", "p-1", "p-2", "p-3", "p-4", "p-5"]
 //カード枚数
-var cards_count = 9
+var cards_count = 15
 //プレイヤー手札
 var player_hands = []
 //CPU手札
