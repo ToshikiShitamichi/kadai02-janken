@@ -6,12 +6,7 @@ body {
 
 img {
     height: 20vh;
-    margin: 0 25px;
-}
-
-header,
-div {
-    margin: 10px;
+    margin: 0 4vw;
 }
 
 .cpu-hand,
@@ -52,11 +47,11 @@ header,
 }
 
 .score-zone {
-    width: 85px
+    width: 20vw
 }
 
 .btn-zone {
-    width: 50px;
+    width: 20vw;
 }
 
 .start {

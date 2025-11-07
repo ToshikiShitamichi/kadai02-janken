@@ -84,9 +84,9 @@ $(".start").on("click", function () {
             p_count += 1
         }
     }
-    $("#remaining-g").text(g_count + " 枚");
-    $("#remaining-c").text(c_count + " 枚");
-    $("#remaining-p").text(p_count + " 枚");
+    $("#remaining-g").text("×" + g_count);
+    $("#remaining-c").text("×" + c_count);
+    $("#remaining-p").text("×" + p_count);
     console.log("player-hands:" + player_hands)
     console.log("cpu-hands:" + cpu_hands)
 });
@@ -161,7 +161,7 @@ $(".player-hand-card").on("click", function () {
     }
     $("#judge-msg").delay(2300).fadeIn(0);
 
-    $("#score").text(win_count + "勝" + lose_count + "敗" + draw_count + "分")
+    $("#score").html(win_count + "勝" + lose_count + "敗" + "<br>" + draw_count + "分")
     $("#score").delay(2300).fadeIn(0);
 
     if (win_count + lose_count + draw_count < 3) {
@@ -181,9 +181,9 @@ $("#next").on("click", async function () {
     $("#cpu-board").show();
     $(".player-hand").css({ "pointer-events": "auto" }); //クリック許可
 
-    $("#remaining-g").text(g_count + " 枚");
-    $("#remaining-c").text(c_count + " 枚");
-    $("#remaining-p").text(p_count + " 枚");
+    $("#remaining-g").text("×" + g_count);
+    $("#remaining-c").text("×" + c_count);
+    $("#remaining-p").text("×" + p_count);
 });
 
 // 7.終了
