@@ -188,6 +188,6 @@ $("#next").on("click", async function () {
 
 // 7.終了
 $("#finish").on("click", function () {
-    alert(win_count + "勝" + lose_count + "敗" + draw_count + "分\n勝率:" + (win_count / 3 * 100) + "%")
+    alert(win_count + "勝" + lose_count + "敗" + draw_count + "分\n勝率:" + (Math.round(win_count / 3 * 100)) + "%")
     location.reload()
 });
