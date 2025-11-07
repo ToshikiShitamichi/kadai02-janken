@@ -47,7 +47,8 @@ header,
 }
 
 .score-zone {
-    width: 20vw
+    width: 20vw;
+    height: 10vh
 }
 
 .btn-zone {
@@ -73,7 +74,8 @@ header,
     width: 10vw;
 }
 
-.hand-card,.field-card {
+.hand-card,
+.field-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,4 +88,5 @@ header,
 
 .remaining-card img {
     height: 8vh;
+    width: auto;
 }
