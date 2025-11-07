@@ -73,7 +73,7 @@ header,
     width: 10vw;
 }
 
-.hand-card {
+.hand-card,.field-card {
     display: flex;
     justify-content: center;
     align-items: center;

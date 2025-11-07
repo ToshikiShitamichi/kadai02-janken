@@ -127,36 +127,36 @@ $(".player-hand-card").on("click", function () {
     if (player_hand.slice(0, 1) == "g") {
         if (cpu_hand.slice(0, 1) == "g") {
             draw_count += 1;
-            $("#judge-msg").text("引き分け");
+            $("#judge-msg").text("引分");
         } else if (cpu_hand.slice(0, 1) == "c") {
             win_count += 1;
-            $("#judge-msg").text("勝利！");
+            $("#judge-msg").text("勝利");
         } else if (cpu_hand.slice(0, 1) == "p") {
             lose_count += 1;
-            $("#judge-msg").text("敗北！");
+            $("#judge-msg").text("敗北");
         }
     } else if (player_hand.slice(0, 1) == "c") {
         if (cpu_hand.slice(0, 1) == "g") {
             lose_count += 1;
-            $("#judge-msg").text("敗北！");
+            $("#judge-msg").text("敗北");
         } else if (cpu_hand.slice(0, 1) == "c") {
             draw_count += 1;
-            $("#judge-msg").text("引き分け");
+            $("#judge-msg").text("引分");
 
         } else if (cpu_hand.slice(0, 1) == "p") {
             win_count += 1;
-            $("#judge-msg").text("勝利！");
+            $("#judge-msg").text("勝利");
         }
     } else if (player_hand.slice(0, 1) == "p") {
         if (cpu_hand.slice(0, 1) == "g") {
             win_count += 1;
-            $("#judge-msg").text("勝利！");
+            $("#judge-msg").text("勝利");
         } else if (cpu_hand.slice(0, 1) == "c") {
             lose_count += 1;
-            $("#judge-msg").text("敗北！");
+            $("#judge-msg").text("敗北");
         } else if (cpu_hand.slice(0, 1) == "p") {
             draw_count += 1;
-            $("#judge-msg").text("引き分け");
+            $("#judge-msg").text("引分");
         }
     }
     $("#judge-msg").delay(2300).fadeIn(0);
