@@ -51,7 +51,7 @@ $(".start").on("click", function () {
     board_hide();
 
     // 2.カード配布
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         let select_num = Math.floor(Math.random() * cards_count)
         let select_card = cards[select_num]
 
@@ -69,7 +69,7 @@ $(".start").on("click", function () {
         $("#player-field-" + (i + 1)).attr("id", select_card);
         $("#" + select_card).attr("src", "./img/" + select_card.slice(0, 1) + ".png");
     }
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         let select_num = Math.floor(Math.random() * cards_count)
         let select_card = cards[select_num]
 
@@ -164,7 +164,7 @@ $(".player-hand-card").on("click", function () {
     $("#score").html(win_count + "勝" + lose_count + "敗" + "<br>" + draw_count + "分")
     $("#score").delay(2300).fadeIn(0);
 
-    if (win_count + lose_count + draw_count < 3) {
+    if (win_count + lose_count + draw_count < 4) {
         $("#next").delay(2300).fadeIn(0);
     } else {
         $("#finish").delay(2300).fadeIn(0);
@@ -188,6 +188,6 @@ $("#next").on("click", async function () {
 
 // 7.終了
 $("#finish").on("click", function () {
-    alert(win_count + "勝" + lose_count + "敗" + draw_count + "分\n勝率:" + (Math.round(win_count / 3 * 100)) + "%")
+    alert(win_count + "勝" + lose_count + "敗" + draw_count + "分\n勝率:" + (Math.round(win_count / 4 * 100)) + "%")
     location.reload()
 });
