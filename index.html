@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>制限じゃんけん</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="start">
+        <h1>制限じゃんけん</h1>
+        <button>スタート</button>
+        <div class="rule">
+            <p>グー３枚、チョキ３枚、パー３枚からランダムに３枚ずつ配布される</p>
+            <p>各ターンごとに１枚ずつ選択し勝負</p>
+            <p>３回戦行い、CPUより勝率を高くしろ</p>
+            <p>様々な情報から相手の手を予測し攻略すべし</p>
+        </div>
+    </div>
+    <div class="content">
+        <header>
+            <div class="score-zone">
+                <p id="score">0勝0敗0分</p>
+            </div>
+            <h1>制限じゃんけん</h1>
+            <div class="btn-zone">
+                <button id="next">次へ</button>
+                <button id="finish">終了</button>
+            </div>
+        </header>
+
+        <!-- 相手のカード -->
+        <div class="cpu-hand">
+            <div>
+                <p>相手のカード</p>
+            </div>
+            <div class="hand-card">
+                <img id="cpu-field-1" src="./img/back.png" alt="">
+                <img id="cpu-field-2" src="./img/back.png" alt="">
+            </div>
+        </div>
+
+        <div class="center">
+            <!-- 勝敗判定 -->
+            <div class="judge">
+                <p id="judge-msg"></p>
+            </div>
+
+            <!-- お互いが出したカード -->
+            <div class="field">
+                <div class="player">
+                    <p>自分の手</p>
+                    <div class="field-card">
+                        <img id="player-g" src="./img/g.png" alt="">
+                        <img id="player-c" src="./img/c.png" alt="">
+                        <img id="player-p" src="./img/p.png" alt="">
+                    </div>
+                </div>
+                <div class="cpu">
+                    <p>相手の手</p>
+                    <div class="field-card">
+                        <img id="cpu-board" src="./img/back.png" alt="">
+                        <img id="cpu-g" src="./img/g.png" alt="">
+                        <img id="cpu-c" src="./img/c.png" alt="">
+                        <img id="cpu-p" src="./img/p.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 使用されていないカード -->
+            <div class="deck">
+                <div class="remaining-card">
+                    <img src="./img/g.png" alt="">
+                    <p id="remaining-g">枚</p>
+                </div>
+                <div class="remaining-card">
+                    <img src="./img/c.png" alt="">
+                    <p id="remaining-c">枚</p>
+                </div>
+                <div class="remaining-card">
+                    <img src="./img/p.png" alt="">
+                    <p id="remaining-p">枚</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 自分のカード -->
+        <div class="player-hand">
+            <p>自分のカード</p>
+            <div class="hand-card">
+                <img id="player-field-1" class="player-hand-card" src="" alt="">
+                <img id="player-field-2" class="player-hand-card" src="" alt="">
+                <img id="player-field-3" class="player-hand-card" src="" alt="">
+                <img id="player-field-4" class="player-hand-card" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
