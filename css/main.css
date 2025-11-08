@@ -90,3 +90,15 @@ header,
     height: 8vh;
     width: auto;
 }
+
+button {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
