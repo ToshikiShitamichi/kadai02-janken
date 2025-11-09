@@ -104,7 +104,7 @@ function reset() {
 // 1.スタート
 $("body").addClass("remove-scrolling");
 $(".content").hide();
-$(".start").on("click", function () {
+$(".start button").on("click", function () {
     $(".start").fadeOut(1000);
     $(".content").delay(1000).fadeIn(500);
 
